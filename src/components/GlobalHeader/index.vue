@@ -16,11 +16,11 @@
       />
       <a-dropdown v-if="currentUser.name">
         <a-menu slot="overlay" class="menu">
-          <a-menu-item v-if="settings.enableDocumentManage">
+          <!--<a-menu-item v-if="settings.enableDocumentManage">
             <router-link to="/documentManager/Settings">
               <a-icon type="setting"/> <span v-html="$t('settingText')"></span
             ></router-link>
-          </a-menu-item>
+          </a-menu-item>-->
           <a-menu-item @click="clearLocalCache">
             <a-icon type="delete" /> <span v-html="$t('cacheText')"></span>
           </a-menu-item>

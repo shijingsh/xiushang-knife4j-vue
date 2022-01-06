@@ -33,7 +33,7 @@
           </a-tab-pane>
         </a-tabs>
         <a-layout-footer style="padding: 0">
-          <GlobalFooter />
+
         </a-layout-footer>
       </a-layout>
     </a-layout>
@@ -93,7 +93,7 @@ export default {
       nextUrl:'',
       nextKey:'',
       menuItemList: [
-       
+
       ]
     };
   },
@@ -113,7 +113,7 @@ export default {
       return this.$store.state.globals.currentMenuData;
     },currentMenuData(){
       return this.$store.state.globals.currentMenuData;
-    }, 
+    },
     language(){
        return this.$store.state.globals.language;
     },MenuData(){
@@ -280,14 +280,14 @@ export default {
               store:this.$store,
               localStore:this.$localStore,
               settings:settings,
-              cacheApis:cacheApis, 
-              routeParams: that.$route.params, 
+              cacheApis:cacheApis,
+              routeParams: that.$route.params,
               plus: this.getPlusStatus(),
               i18n:tmpI18n,
               i18nVue:this.$i18n,
               i18nFlag:i18nParams.include,
               configSupport:false,
-              i18nInstance:this.getCurrentI18nInstance() 
+              i18nInstance:this.getCurrentI18nInstance()
               })
           }else{
             //不包含
@@ -305,14 +305,14 @@ export default {
                 store:this.$store,
                 localStore:this.$localStore,
                 settings:settings,
-                cacheApis:cacheApis, 
-                routeParams: that.$route.params, 
+                cacheApis:cacheApis,
+                routeParams: that.$route.params,
                 plus: this.getPlusStatus(),
                 i18n:tmpI18n,
                 i18nVue:this.$i18n,
                 i18nFlag:i18nParams.include,
                 configSupport:false,
-                i18nInstance:this.getCurrentI18nInstance() 
+                i18nInstance:this.getCurrentI18nInstance()
                 })
             })
           }
@@ -349,15 +349,15 @@ export default {
               store:this.$store,
               localStore:this.$localStore,
               settings:settings,
-              cacheApis:cacheApis, 
-              routeParams: that.$route.params, 
+              cacheApis:cacheApis,
+              routeParams: that.$route.params,
               plus: this.getPlusStatus(),
               i18n:tmpI18n,
               i18nVue:this.$i18n,
               i18nFlag:i18nParams.include,
               configSupport:false,
               desktop:true,
-              i18nInstance:this.getCurrentI18nInstance() 
+              i18nInstance:this.getCurrentI18nInstance()
               })
           }else{
             //不包含
@@ -375,15 +375,15 @@ export default {
                 store:this.$store,
                 localStore:this.$localStore,
                 settings:settings,
-                cacheApis:cacheApis, 
-                routeParams: that.$route.params, 
+                cacheApis:cacheApis,
+                routeParams: that.$route.params,
                 plus: this.getPlusStatus(),
                 i18n:tmpI18n,
                 i18nVue:this.$i18n,
                 i18nFlag:i18nParams.include,
                 configSupport:false,
                 desktop:true,
-                i18nInstance:this.getCurrentI18nInstance() 
+                i18nInstance:this.getCurrentI18nInstance()
                 })
             })
           }
@@ -420,15 +420,15 @@ export default {
               store:this.$store,
               localStore:this.$localStore,
               settings:settings,
-              cacheApis:cacheApis, 
-              routeParams: that.$route.params, 
+              cacheApis:cacheApis,
+              routeParams: that.$route.params,
               plus: this.getPlusStatus(),
               i18n:tmpI18n,
               url:'jf-swagger/swagger-resources',
               i18nVue:this.$i18n,
               i18nFlag:i18nParams.include,
               configSupport:false,
-              i18nInstance:this.getCurrentI18nInstance() 
+              i18nInstance:this.getCurrentI18nInstance()
               })
           }else{
             //不包含
@@ -446,15 +446,15 @@ export default {
                 store:this.$store,
                 localStore:this.$localStore,
                 settings:settings,
-                cacheApis:cacheApis, 
-                routeParams: that.$route.params, 
+                cacheApis:cacheApis,
+                routeParams: that.$route.params,
                 plus: this.getPlusStatus(),
                 i18n:tmpI18n,
                 url:'jf-swagger/swagger-resources',
                 i18nVue:this.$i18n,
                 i18nFlag:i18nParams.include,
                 configSupport:false,
-                i18nInstance:this.getCurrentI18nInstance() 
+                i18nInstance:this.getCurrentI18nInstance()
                 })
             })
           }
@@ -464,10 +464,10 @@ export default {
     initKnife4jFront() {
       //该版本区别于Spring-ui的版本,提供给其它语言来集成knife4j
       var that = this;
-      var swaggerOptions={ 
+      var swaggerOptions={
         store:this.$store,
         localStore:this.$localStore,
-        routeParams: that.$route.params, 
+        routeParams: that.$route.params,
         plus: this.getPlusStatus(),
         i18n:tmpI18n,
         configSupport:false,
@@ -556,7 +556,7 @@ export default {
       //id
       let swaggerIns = this.swagger.selectInstanceByGroupId(value);
       this.swagger.analysisApi(swaggerIns);
-      this.$store.dispatch('globals/setDefaultService', value);	
+      this.$store.dispatch('globals/setDefaultService', value);
       //this.defaultServiceOption = value;
       //console(value);
       //console(option);

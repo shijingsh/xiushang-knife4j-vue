@@ -3073,7 +3073,7 @@ SwaggerBootstrapUi.prototype.createDetailMenu = function (addFlag) {
   }
   //Swagger通用Models add by xiaoyumin 2018-11-6 13:26:45
   //是否显示SwaggerModels
-  if(that.settings.enableSwaggerModels){
+  /*if(that.settings.enableSwaggerModels){
     //重命名model
     var swaggerModelName=KUtils.getValue(that.settings,"swaggerModelName","Swagger Models",true);
     menuArr.push({
@@ -3088,16 +3088,16 @@ SwaggerBootstrapUi.prototype.createDetailMenu = function (addFlag) {
       icon: 'icon-modeling',
       path: 'SwaggerModels/' + groupName,
     })
-  }
+  }*/
   //是否显示文档管理
-  if(that.settings.enableDocumentManage){
+  /*if(that.settings.enableDocumentManage){
     //文档管理
     menuArr.push({
       groupName: groupName,
       groupId: groupId,
       key: 'documentManager' + md5(groupName),
       i18n:'manager',
-      /* name: '文档管理', */
+      /!* name: '文档管理', *!/
       name:this.getI18n().menu.manager,
       icon: 'icon-zdlxb',
       path: 'documentManager',
@@ -3105,8 +3105,8 @@ SwaggerBootstrapUi.prototype.createDetailMenu = function (addFlag) {
           groupName: groupName,
           groupId: groupId,
           key: 'globalParameters' + md5(groupName),
-        /*  name: '全局参数设置',
-          tabName: '全局参数设置(' + groupName + ')', */
+        /!*  name: '全局参数设置',
+          tabName: '全局参数设置(' + groupName + ')', *!/
           name: this.getI18n().menu.globalsettings,
           i18n:'globalsettings',
           tabName: this.getI18n().menu.globalsettings+'(' + groupName + ')',
@@ -3117,8 +3117,8 @@ SwaggerBootstrapUi.prototype.createDetailMenu = function (addFlag) {
           groupName: groupName,
           groupId: groupId,
           key: 'OfficelineDocument' + md5(groupName),
-        /*  name: '离线文档',
-          tabName: '离线文档(' + groupName + ')', */
+        /!*  name: '离线文档',
+          tabName: '离线文档(' + groupName + ')', *!/
           name: this.getI18n().menu.officeline,
           i18n:'officeline',
           tabName: this.getI18n().menu.officeline+'(' + groupName + ')',
@@ -3129,7 +3129,7 @@ SwaggerBootstrapUi.prototype.createDetailMenu = function (addFlag) {
           groupName: groupName,
           groupId: groupId,
           key: 'Settings' + md5(groupName),
-          /* name: '个性化设置', */
+          /!* name: '个性化设置', *!/
           name: this.getI18n().menu.selfSettings,
           i18n:'selfSettings',
           component: 'Settings',
@@ -3138,7 +3138,7 @@ SwaggerBootstrapUi.prototype.createDetailMenu = function (addFlag) {
       ]
     })
 
-  }
+  }*/
   //自定义文档
   //since2.0.6后直接判断,不用管增强配置
   if(KUtils.arrNotEmpty(that.currentInstance.markdownFiles)){
